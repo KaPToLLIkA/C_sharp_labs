@@ -61,9 +61,14 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FlightsService.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FlightsService.svc.cs">
+      <DependentUpon>FlightsService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="IFlightsData.cs" />
     <Compile Include="IFlightsServise.cs" />
     <Compile Include="model\Flight.cs" />
     <Compile Include="model\Person.cs" />
