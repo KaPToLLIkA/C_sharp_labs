@@ -23,7 +23,7 @@ namespace LAB6_SERVICE
         Flight getFlightAt(int index);
         
         [OperationContract]
-        Ticket buyTicket(Person person);
+        Ticket buyTicket(Person person, string arrivalAddress, string departureAddress, string departureTime);
 
     }
 }

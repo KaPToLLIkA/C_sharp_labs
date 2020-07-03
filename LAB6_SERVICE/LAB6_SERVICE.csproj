@@ -68,7 +68,7 @@
     <Compile Include="FlightsService.svc.cs">
       <DependentUpon>FlightsService.svc</DependentUpon>
     </Compile>
-    <Compile Include="IFlightsData.cs" />
+    <Compile Include="FlightsData.cs" />
     <Compile Include="IFlightsServise.cs" />
     <Compile Include="model\Flight.cs" />
     <Compile Include="model\Person.cs" />
@@ -85,6 +85,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -19,7 +19,7 @@ namespace LAB6_SERVICE
             FlightsData.Flights.Add(flight);
         }
 
-        public Ticket buyTicket(Person person)
+        public Ticket buyTicket(Person person, string arrivalAddress, string departureAddress, string departureTime)
         {
             
             Ticket newTicket = new Ticket();
@@ -28,12 +28,12 @@ namespace LAB6_SERVICE
 
             ticketId++;
 
-            Flight f = getFreeFlight();
-            f.AvailableTicketsCount--;
+            Flight f = FlightsData.Flights.SingleOrDefault(e => (e.ArrivalAddress == arrivalAddress && e.DepartureAddress == departureAddress && e.DepartureTime == departureTime));
 
             if (f != null)
             {
                 newTicket.Flight = f;
+                f.AvailableTicketsCount--;
                 FlightsData.Tickets.Add(newTicket);
                 return newTicket;
             }

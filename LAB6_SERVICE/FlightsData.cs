@@ -11,14 +11,17 @@ namespace LAB6_SERVICE
     
     public static class FlightsData
     {
+        private static List<Flight> _flights = new List<Flight>();
+        private static List<Ticket> _tickets = new List<Ticket>();
+
         public static List<Flight> Flights
         {
-            get; set;
+            get { return _flights; }
         }
 
         public static List<Ticket> Tickets
         {
-            get; set;
+            get { return _tickets; }
         }
     }
 }
