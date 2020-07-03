@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LAB6_CONSOLE_CLIENT", "LAB6
 		{5820C386-DC2C-4F8E-8241-8F11146DFC79} = {5820C386-DC2C-4F8E-8241-8F11146DFC79}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LAB7", "LAB7\LAB7.csproj", "{6DFD184F-831E-40F2-99DD-2863C2FDA39C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -114,6 +116,14 @@ Global
 		{BA902DD2-7A6C-406B-9BE6-E96B23B037B7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BA902DD2-7A6C-406B-9BE6-E96B23B037B7}.Release|x86.ActiveCfg = Release|Any CPU
 		{BA902DD2-7A6C-406B-9BE6-E96B23B037B7}.Release|x86.Build.0 = Release|Any CPU
+		{6DFD184F-831E-40F2-99DD-2863C2FDA39C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DFD184F-831E-40F2-99DD-2863C2FDA39C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DFD184F-831E-40F2-99DD-2863C2FDA39C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6DFD184F-831E-40F2-99DD-2863C2FDA39C}.Debug|x86.Build.0 = Debug|Any CPU
+		{6DFD184F-831E-40F2-99DD-2863C2FDA39C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DFD184F-831E-40F2-99DD-2863C2FDA39C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DFD184F-831E-40F2-99DD-2863C2FDA39C}.Release|x86.ActiveCfg = Release|Any CPU
+		{6DFD184F-831E-40F2-99DD-2863C2FDA39C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
