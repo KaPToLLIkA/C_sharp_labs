@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LAB4_client", "LAB4_client\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LAB4_base", "LAB4_base\LAB4_base.csproj", "{78FBD210-BCD3-42E0-B522-640C08EA9CD8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LAB6_SERVICE", "LAB6_SERVICE\LAB6_SERVICE.csproj", "{5820C386-DC2C-4F8E-8241-8F11146DFC79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +93,14 @@ Global
 		{78FBD210-BCD3-42E0-B522-640C08EA9CD8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{78FBD210-BCD3-42E0-B522-640C08EA9CD8}.Release|x86.ActiveCfg = Release|Any CPU
 		{78FBD210-BCD3-42E0-B522-640C08EA9CD8}.Release|x86.Build.0 = Release|Any CPU
+		{5820C386-DC2C-4F8E-8241-8F11146DFC79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5820C386-DC2C-4F8E-8241-8F11146DFC79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5820C386-DC2C-4F8E-8241-8F11146DFC79}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5820C386-DC2C-4F8E-8241-8F11146DFC79}.Debug|x86.Build.0 = Debug|Any CPU
+		{5820C386-DC2C-4F8E-8241-8F11146DFC79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5820C386-DC2C-4F8E-8241-8F11146DFC79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5820C386-DC2C-4F8E-8241-8F11146DFC79}.Release|x86.ActiveCfg = Release|Any CPU
+		{5820C386-DC2C-4F8E-8241-8F11146DFC79}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
