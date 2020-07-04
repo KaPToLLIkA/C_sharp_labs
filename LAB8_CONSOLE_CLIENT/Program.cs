@@ -11,24 +11,27 @@ namespace LAB8_CONSOLE_CLIENT
     {
         static void Main(string[] args)
         {
-            C.Math client = new C.Math();
+            C.StrUtil client = new C.StrUtil();
 
             while (true)
             {
-                Console.WriteLine("1 findMiddleOfNonPositiveValsInIntMatrix()\n" +
-                    "2 findMinMiddleOfColumnsInIntMatrix()\n" +
-                    "3 findMaxMiddleOfRowsInIntMatrix()\n" +
+                Console.WriteLine("1 toUpperCase()\n" +
+                    "2 toLowerCase()\n" +
+                    "3 toUpperCaseFirstLetterInWords()\n" +
                     "0 EXIT\n\n\n");
                 switch (Console.ReadLine())
                 {
                     case "1":
-                        Console.WriteLine("Result: " + client.findMiddleOfNonPositiveValsInIntMatrix(getMatrixFromConsole()));
+                        Console.Write("Print str: ");
+                        Console.WriteLine("Result: " + client.toUpperCase(Console.ReadLine()));
                         break;
                     case "2":
-                        Console.WriteLine("Result: " + client.findMinMiddleOfColumnsInIntMatrix(getMatrixFromConsole()));
+                        Console.Write("Print str: ");
+                        Console.WriteLine("Result: " + client.toLowerCase(Console.ReadLine()));
                         break;
                     case "3":
-                        Console.WriteLine("Result: " + client.findMaxMiddleOfRowsInIntMatrix(getMatrixFromConsole()));
+                        Console.Write("Print str: ");
+                        Console.WriteLine("Result: " + client.toUpperCaseFirstLetterInWords(Console.ReadLine()));
                         break;
                     case "0":
                         Environment.Exit(0);
@@ -42,41 +45,6 @@ namespace LAB8_CONSOLE_CLIENT
             }
         }
 
-        static int getInt()
-        {
-            while(true)
-            {
-                try
-                {
-                    return Convert.ToInt32(Console.ReadLine());
-                } catch
-                {
-                    Console.WriteLine("ERROR");
-                }
-            }
-        }
-
-        static int[,] getMatrixFromConsole()
-        {
-            Console.Write("Print X: ");
-            int x = getInt();
-
-            Console.Write("Print Y: ");
-            int y = getInt();
-
-            int[,] m = new int[y, x];
-
-            for (int r = 0; r < y; ++r)
-            {
-                for (int c = 0; c < x; ++c)
-                {
-                    Console.Write(r + ":" + c + "  ");
-
-                    m[r, c] = getInt();
-                }
-            }
-            return m;
-
-        }
+       
     }
 }

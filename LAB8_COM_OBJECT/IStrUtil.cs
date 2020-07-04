@@ -9,13 +9,13 @@ namespace LAB8_COM_OBJECT
 {
     [Guid("01D10028-A89D-47ee-8048-C27B6DD4BE63")]
    // [ComVisible(true)]
-    public interface IMath
+    public interface IStrUtil
     {
         [DispId(1)]
-        double findMinMiddleOfColumnsInIntMatrix(int[,] matrix);
+        string toUpperCase(string str);
         [DispId(2)]
-        double findMaxMiddleOfRowsInIntMatrix(int[,] matrix);
+        string toLowerCase(string str);
         [DispId(3)]
-        double findMiddleOfNonPositiveValsInIntMatrix(int[,] matrix);
+        string toUpperCaseFirstLetterInWords(string str);
     }
 }

@@ -43,8 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IEvents.cs" />
-    <Compile Include="IMath.cs" />
-    <Compile Include="Math.cs" />
+    <Compile Include="IStrUtil.cs" />
+    <Compile Include="StrUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
