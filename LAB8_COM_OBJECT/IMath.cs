@@ -12,10 +12,10 @@ namespace LAB8_COM_OBJECT
     public interface IMath
     {
         [DispId(1)]
-        double findMinMiddleOfColumnsInIntMatrix(int[,] matrix);
+        int findMinPositiveInIntMatrix(int[,] matrix);
         [DispId(2)]
-        double findMaxMiddleOfRowsInIntMatrix(int[,] matrix);
+        int findMaxNegativeInIntMatrix(int[,] matrix);
         [DispId(3)]
-        double findMiddleOfNonPositiveValsInIntMatrix(int[,] matrix);
+        double findMiddleOfPositiveValsInIntMatrix(int[,] matrix);
     }
 }

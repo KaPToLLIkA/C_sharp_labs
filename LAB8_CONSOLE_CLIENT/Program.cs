@@ -15,20 +15,20 @@ namespace LAB8_CONSOLE_CLIENT
 
             while (true)
             {
-                Console.WriteLine("1 findMiddleOfNonPositiveValsInIntMatrix()\n" +
-                    "2 findMinMiddleOfColumnsInIntMatrix()\n" +
-                    "3 findMaxMiddleOfRowsInIntMatrix()\n" +
+                Console.WriteLine("1 findMaxNegativeInIntMatrix()\n" +
+                    "2 findMiddleOfPositiveValsInIntMatrix()\n" +
+                    "3 findMinPositiveInIntMatrix()\n" +
                     "0 EXIT\n\n\n");
                 switch (Console.ReadLine())
                 {
                     case "1":
-                        Console.WriteLine("Result: " + client.findMiddleOfNonPositiveValsInIntMatrix(getMatrixFromConsole()));
+                        Console.WriteLine("Result: " + client.findMaxNegativeInIntMatrix(getMatrixFromConsole()));
                         break;
                     case "2":
-                        Console.WriteLine("Result: " + client.findMinMiddleOfColumnsInIntMatrix(getMatrixFromConsole()));
+                        Console.WriteLine("Result: " + client.findMiddleOfPositiveValsInIntMatrix(getMatrixFromConsole()));
                         break;
                     case "3":
-                        Console.WriteLine("Result: " + client.findMaxMiddleOfRowsInIntMatrix(getMatrixFromConsole()));
+                        Console.WriteLine("Result: " + client.findMinPositiveInIntMatrix(getMatrixFromConsole()));
                         break;
                     case "0":
                         Environment.Exit(0);

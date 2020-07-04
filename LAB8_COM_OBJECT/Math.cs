@@ -14,7 +14,23 @@ namespace LAB8_COM_OBJECT
 
     public class Math : IMath
     {
-        public double findMiddleOfNonPositiveValsInIntMatrix(int[,] matrix)
+        public int findMaxNegativeInIntMatrix(int[,] matrix)
+        {
+            int max = int.MinValue;
+            for (int r = 0; r < matrix.GetLength(0); ++r)
+            {
+                for (int c = 0; c < matrix.GetLength(1); ++c)
+                {
+                    if (matrix[r, c] < 0 && matrix[r, c] > max)
+                    {
+                        max = matrix[r, c];
+                    }
+                }
+            }
+            return max;
+        }
+
+        public double findMiddleOfPositiveValsInIntMatrix(int[,] matrix)
         {
             double middle = 0;
             int count = 0;
@@ -24,7 +40,7 @@ namespace LAB8_COM_OBJECT
 
                 for (int c = 0; c < matrix.GetLength(1); ++c)
                 {
-                    if (matrix[r,c] < 0)
+                    if (matrix[r,c] > 0)
                     {
                         middle += matrix[r, c];
                         ++count;
@@ -36,49 +52,20 @@ namespace LAB8_COM_OBJECT
             else return middle / count;
         }
 
-        public double findMinMiddleOfColumnsInIntMatrix(int[,] matrix)
+        public int findMinPositiveInIntMatrix(int[,] matrix)
         {
-            double minMiddle = double.MaxValue;
-
-            for (int c = 0; c < matrix.GetLength(1); ++c)
-            {
-                int cSum = 0;
-                for (int r = 0; r < matrix.GetLength(0); ++r)
-                {
-                    cSum += matrix[r, c];
-                }
-                double newMin = Convert.ToDouble(cSum) / matrix.GetLength(1);
-
-                if (newMin < minMiddle)
-                {
-                    minMiddle = newMin;
-                }
-            }
-
-            return minMiddle;
-        }
-
-        public double findMaxMiddleOfRowsInIntMatrix(int[,] matrix)
-        {
-            double maxMiddle = double.MinValue;
-
+            int min = int.MaxValue;
             for (int r = 0; r < matrix.GetLength(0); ++r)
             {
-                int rSum = 0;
                 for (int c = 0; c < matrix.GetLength(1); ++c)
                 {
-                    rSum += matrix[r, c];
-                }
-
-                double newMax = Convert.ToDouble(rSum) / matrix.GetLength(0);
-
-                if (newMax > maxMiddle)
-                {
-                    maxMiddle = newMax;
+                    if (matrix[r, c] > 0 && matrix[r, c] < min)
+                    {
+                        min = matrix[r, c];
+                    }
                 }
             }
-
-            return maxMiddle;
+            return min;
         }
     }
 }
