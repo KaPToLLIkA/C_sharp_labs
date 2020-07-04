@@ -31,7 +31,9 @@ namespace LAB8_COM_OBJECT
                     }
                 }
             }
-            return middle / count;
+
+            if (count == 0) return 0;
+            else return middle / count;
         }
 
         public double findMinMiddleOfColumnsInIntMatrix(int[,] matrix)

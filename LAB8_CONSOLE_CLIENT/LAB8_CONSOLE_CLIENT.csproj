@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LAB8_COM_OBJECT">
+      <HintPath>..\LAB8_COM_OBJECT\bin\Debug\LAB8_COM_OBJECT.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
