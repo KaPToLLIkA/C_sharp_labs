@@ -9,7 +9,9 @@ namespace LAB8_COM_OBJECT
 {
     [Guid("349988BC-2594-46cf-BE83-1F09C25617F3"),
      ClassInterface(ClassInterfaceType.None),
-    ComSourceInterfaces(typeof(IEvents))]
+    ComSourceInterfaces(typeof(IEvents)),
+        ComVisible(true)]
+
     public class Math : IMath
     {
         public double findMiddleOfNonPositiveValsInIntMatrix(int[,] matrix)

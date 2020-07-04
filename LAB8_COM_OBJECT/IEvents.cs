@@ -9,7 +9,8 @@ namespace LAB8_COM_OBJECT
 {
     [Guid("5FAC6B03-6D95-46ed-A3C1-B0DBEE34D022"),
     InterfaceType(ComInterfaceType.InterfaceIsIDispatch)]
-    interface IEvents
+    
+    public interface IEvents
     {
     }
 }
