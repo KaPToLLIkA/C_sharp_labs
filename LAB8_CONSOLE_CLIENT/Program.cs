@@ -15,20 +15,20 @@ namespace LAB8_CONSOLE_CLIENT
 
             while (true)
             {
-                Console.WriteLine("1 findMiddleOfNonPositiveValsInIntMatrix()\n" +
-                    "2 findMinMiddleOfColumnsInIntMatrix()\n" +
-                    "3 findMaxMiddleOfRowsInIntMatrix()\n" +
+                Console.WriteLine("1 findArithmeticMeanInIntVector()\n" +
+                    "2 findGeometricMeanInIntVector()\n" +
+                    "3 findSummOfPositiveValsInIntVector()\n" +
                     "0 EXIT\n\n\n");
                 switch (Console.ReadLine())
                 {
                     case "1":
-                        Console.WriteLine("Result: " + client.findMiddleOfNonPositiveValsInIntMatrix(getMatrixFromConsole()));
+                        Console.WriteLine("Result: " + client.findArithmeticMeanInIntVector(getVectorFromConsole()));
                         break;
                     case "2":
-                        Console.WriteLine("Result: " + client.findMinMiddleOfColumnsInIntMatrix(getMatrixFromConsole()));
+                        Console.WriteLine("Result: " + client.findGeometricMeanInIntVector(getVectorFromConsole()));
                         break;
                     case "3":
-                        Console.WriteLine("Result: " + client.findMaxMiddleOfRowsInIntMatrix(getMatrixFromConsole()));
+                        Console.WriteLine("Result: " + client.findSummOfPositiveValsInIntVector(getVectorFromConsole()));
                         break;
                     case "0":
                         Environment.Exit(0);
@@ -56,24 +56,20 @@ namespace LAB8_CONSOLE_CLIENT
             }
         }
 
-        static int[,] getMatrixFromConsole()
+        static int[] getVectorFromConsole()
         {
             Console.Write("Print X: ");
             int x = getInt();
 
-            Console.Write("Print Y: ");
-            int y = getInt();
+            int[] m = new int[x];
 
-            int[,] m = new int[y, x];
-
-            for (int r = 0; r < y; ++r)
+            for (int i = 0; i < x; ++i)
             {
-                for (int c = 0; c < x; ++c)
-                {
-                    Console.Write(r + ":" + c + "  ");
+                
+                Console.Write(i + ": ");
 
-                    m[r, c] = getInt();
-                }
+                m[i] = getInt();
+                
             }
             return m;
 

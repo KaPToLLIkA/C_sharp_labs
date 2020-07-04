@@ -14,71 +14,25 @@ namespace LAB8_COM_OBJECT
 
     public class Math : IMath
     {
-        public double findMiddleOfNonPositiveValsInIntMatrix(int[,] matrix)
+        public double findArithmeticMeanInIntVector(int[] vector)
         {
-            double middle = 0;
-            int count = 0;
-
-            for (int r = 0; r < matrix.GetLength(0); ++r)
-            {
-
-                for (int c = 0; c < matrix.GetLength(1); ++c)
-                {
-                    if (matrix[r,c] < 0)
-                    {
-                        middle += matrix[r, c];
-                        ++count;
-                    }
-                }
-            }
-
-            if (count == 0) return 0;
-            else return middle / count;
+            return Convert.ToDouble(vector.Sum())/Convert.ToDouble(vector.Length);
         }
 
-        public double findMinMiddleOfColumnsInIntMatrix(int[,] matrix)
+        public double findGeometricMeanInIntVector(int[] vector)
         {
-            double minMiddle = double.MaxValue;
+            int ans = 1;
 
-            for (int c = 0; c < matrix.GetLength(1); ++c)
+            foreach(int item in vector)
             {
-                int cSum = 0;
-                for (int r = 0; r < matrix.GetLength(0); ++r)
-                {
-                    cSum += matrix[r, c];
-                }
-                double newMin = Convert.ToDouble(cSum) / matrix.GetLength(1);
-
-                if (newMin < minMiddle)
-                {
-                    minMiddle = newMin;
-                }
+                ans *= item;
             }
-
-            return minMiddle;
+            return System.Math.Pow(ans, Convert.ToDouble(1) / Convert.ToDouble(vector.Length));
         }
 
-        public double findMaxMiddleOfRowsInIntMatrix(int[,] matrix)
+        public int findSummOfPositiveValsInIntVector(int[] vector)
         {
-            double maxMiddle = double.MinValue;
-
-            for (int r = 0; r < matrix.GetLength(0); ++r)
-            {
-                int rSum = 0;
-                for (int c = 0; c < matrix.GetLength(1); ++c)
-                {
-                    rSum += matrix[r, c];
-                }
-
-                double newMax = Convert.ToDouble(rSum) / matrix.GetLength(0);
-
-                if (newMax > maxMiddle)
-                {
-                    maxMiddle = newMax;
-                }
-            }
-
-            return maxMiddle;
+            return vector.Sum(e => (e > 0 ? e : 0));
         }
     }
 }
