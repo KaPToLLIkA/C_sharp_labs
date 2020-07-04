@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{376BFD61-A17B-4933-A367-56E1FFF85169}</ProjectGuid>
+    <ProjectGuid>{C24CAA2C-6D3C-401C-A42A-AB4B79202092}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>LAB5_SERVICE_UI</RootNamespace>
     <AssemblyName>LAB5_SERVICE_UI</AssemblyName>
@@ -48,7 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\SpellService1\Reference.cs">
+    <Compile Include="Connected Services\NumConv\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -61,6 +61,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -70,16 +73,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Connected Services\SpellService1\LAB5_SERVICE_UI.SpellService1.checkTextResponse.datasource">
+    <None Include="Connected Services\NumConv\LAB5_SERVICE_UI.NumConv.NumberToDollarsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\SpellService1\LAB5_SERVICE_UI.SpellService1.checkTextsResponse.datasource">
+    <None Include="Connected Services\NumConv\LAB5_SERVICE_UI.NumConv.NumberToWordsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\SpellService1\LAB5_SERVICE_UI.SpellService1.SpellError.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SpellService1\spellservice.wsdl" />
+    <None Include="Connected Services\NumConv\NumberConversion.wsdl" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -97,16 +97,16 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\SpellService1\" />
+    <WCFMetadataStorage Include="Connected Services\NumConv\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\SpellService1\configuration91.svcinfo" />
+    <None Include="Connected Services\NumConv\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\SpellService1\configuration.svcinfo" />
+    <None Include="Connected Services\NumConv\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\SpellService1\Reference.svcmap">
+    <None Include="Connected Services\NumConv\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

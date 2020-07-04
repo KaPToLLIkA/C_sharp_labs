@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8e5ab4df-5e8d-408a-b71b-577e838ffa05" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0d429828-b0a7-4fc6-837c-231c085f63b2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,10 +19,10 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="https://speller.yandex.net/services/spellservice?WSDL" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://www.dataaccess.com/webservicesserver/numberconversion.wso?WSDL" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="spellservice.wsdl" MetadataType="Wsdl" ID="4683a330-4e14-4af6-9e38-b5060e59ceed" SourceId="1" SourceUrl="https://speller.yandex.net/services/spellservice?WSDL" />
+    <MetadataFile FileName="NumberConversion.wsdl" MetadataType="Wsdl" ID="89b3b86b-e8b9-49ea-893b-95d0e6e349ed" SourceId="1" SourceUrl="http://www.dataaccess.com/webservicesserver/numberconversion.wso?WSDL" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
